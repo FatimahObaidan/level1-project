@@ -8,8 +8,8 @@ services:
       - "8083:80"
   project-assessment-site:
     container_name: project-container
-    image: fatimahobaidan/project-assessment-site/public
-    build: ./project-assessment-site/public
+    image: fatimahobaidan/project-assessment-site
+    build: ./project-assessment-site
     ports: 
       - "80:80"
   office-service:
