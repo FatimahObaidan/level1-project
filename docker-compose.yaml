@@ -1,27 +1,27 @@
 version: '3.3'
 services:
   department-service:
-    image: fatimahobaidan/department-service
+    image: department-service
     build: ./department-service
     ports:
       - "8083:80"
   project-assessment-site: 
-    image: fatimahobaidan/project-assessment-site
+    image: project-assessment-site
     build: ./project-assessment-site
     ports: 
       - "80:80"
   office-service:
-    image: fatimahobaidan/office-service
+    image: office-service
     build: ./office-service
     ports:
       - "8084:80"
   person-service:
-    image: fatimahobaidan/person-service
+    image: person-service
     build: ./person-service
     ports:
       - "8081:80"
   role-service:
-    image: fatimahobaidan/role-service
+    image: role-service
     build: ./role-service
     ports:
       - "8082:80"
