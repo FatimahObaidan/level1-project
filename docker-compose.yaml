@@ -5,7 +5,7 @@ services:
     build: ./department-service
     ports:
       - "8083:80"
-  project-assessment-site:
+  project-assessment-site: 
     image: fatimahobaidan/project-assessment-site
     build: ./project-assessment-site
     ports: 
