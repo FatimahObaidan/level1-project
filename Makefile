@@ -1,5 +1,5 @@
 ONESHELL:
-iSHELL = /bin/bash
+SHELL = /bin/bash
 
 build:	build-level1-project-components build-level1-project-tools
 
