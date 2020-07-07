@@ -1,21 +1,20 @@
 ONESHELL:
 iSHELL = /bin/bash
 
-build:
-	build-level1-project-components build-level1-project-tools
+build:	build-level1-project-components build-level1-project-tools
 
 
 build-level1-project-components:
 	DOCKER_BUILDKIT=1 docker-compose build
 
 build-level1-project-tools:
-	DOCKER_BUILDKIT=1 docker build --tag fatimahobaidan/level1-project .
+	DOCKER_BUILDKIT=1 docker build --tag level1-project .
 
 run:
-	docker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock fatimahobaidan/level1-project
+	docker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock level1-project
 
 cbuild:
-	docker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock fatimahobaidan/level1-project build
+	docker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock level1-project build
 
 up:
 	docker-compose up -d
