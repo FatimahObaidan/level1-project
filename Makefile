@@ -1,9 +1,8 @@
 ONESHELL:
 SHELL = /bin/bash
 
-build: build-level1-project-components build-level1-project-tools
+build:	build-level1-project-components build-level1-project-tools
 
-level1-project: pull up
 
 build-level1-project-components:
 	DOCKER_BUILDKIT=1 docker-compose build

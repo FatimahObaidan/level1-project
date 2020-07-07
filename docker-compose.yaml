@@ -24,4 +24,4 @@ services:
     image: role-service
     build: ./role-service
     ports:
-            - "8082:80"
+      - "8082:80"
