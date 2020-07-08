@@ -7,7 +7,6 @@ sudo usermod -aG docker $USER
 sudo apt install vim
 sudo apt install docker-compose
 sudo apt install make
-sudo apt install curl
 
 git clone https://github.com/FatimahObaidan/level1-project.git
 
